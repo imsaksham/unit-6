@@ -1,0 +1,9 @@
+Q4/- Write a small note on Servlet and JSP.
+Servlet:-
+
+Servlet technology is used to create a web application. A servlet is a Java class that is used to 
+extend the capabilities of servers that host applications accessed by means of a request-response model.
+Servlets are mainly used to extend the applications hosted by web services. 
+
+JSP-
+ JSP is used to create web applications just like Servlet technology. A JSP is a text document that contains two types of text: static data and dynamic data. The static data can be expressed in any text-based format (like HTML, XML, SVG, and WML), and the dynamic content can be expressed by JSP elements. 

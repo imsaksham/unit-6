@@ -1,0 +1,5 @@
+Q3.What is the role of ServletContainer in web application development?
+
+The client can request only a static WebPages from the server. 
+If the user wants to read the web pages as per input then the servlet container is used in java.
+The servlet container is the part of web server which can be run in a separate process.

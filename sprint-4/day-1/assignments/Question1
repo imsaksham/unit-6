@@ -1,0 +1,11 @@
+Q1/- Explain the Java-based MVC architecture in Web application development.
+
+Ans:- The Model-View-Controller (MVC) is a well-known design pattern
+in the web development field. It is way to organize our code. It specifies that a program or application shall consist of data model, presentation information and control information. The MVC pattern needs all these components to be separated as different objects.
+
+Model-It represent the Bussiness Layer of Application. it contain the data in object form and that contain the logic to update the data.
+
+View-It represent the Presentation Layer it used visulized(see) the containe module data.
+
+Controller-It works on both the model and view. It is used to manage the flow of application, i.e. data flow in the model object and to update the view whenever data is changed.
+

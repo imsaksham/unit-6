@@ -1,0 +1,28 @@
+
+Q1/- Write down some of the HTTP request, and response headers
+
+The HTTP headers are used to pass additional information between the clients and the server through the request and response header. 
+Request Header: This type of headers contains information about the fetched request by the client.
+Response Header: This type of headers contains the location of the source that has been requested by the client.
+
+Q2/- Write down some of the frequently used HTTP Status codes and their meanings
+100 -- 199  : information 
+200 -- 299 : success or OK
+300--399 : redirection
+400 -499 : incomplete resource / bad request  401: Bad request, 403: forbidden 
+500-599 : server-error
+
+
+Q3/- What is the difference between SOAP and REST ?
+Soap:-
+Soap is a Protocol.
+SOAP stands for Simple Object Access Protocol.
+SOAP can't use REST because it is a protocol.
+SOAP uses services interfaces to expose the business logic.
+
+REST:-
+ REST is an architectural style.
+ REST stands for REpresentational State Transfer.
+ REST can use SOAP web services because it is a concept and can use any protocol like HTTP, SOAP.
+ REST uses URI to expose business logic.
+    

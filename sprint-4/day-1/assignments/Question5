@@ -1,0 +1,25 @@
+Q5/ What do you mean by Webservices, Explain the similarities and differences between a
+Web application and Webservices.
+
+Web Server-
+
+A Web Server is defined as a server which accepts a request for data and sends the relevant document in return. In other words, it is a computer program that accepts a request for a specific document and sends it to the client machine.
+
+Web servers are designed to serve HTTP content to the client computer. In most cases, the web servers are the integral parts of the application servers. Web servers accept the HTTP requests and interpret them to serve the requested content.
+
+
+Webserver:-
+
+A Web Server contains a Web container only.
+A web server is good in case of static contents like static html pages.
+A Web server consumes less CPU, Memory resources as compared to an application server.
+Multithreading is not supported.
+Web Servers support HTTP Protocol.
+
+Web Application:-
+
+An Application Server contains a Web Container plus an EJB Container.
+An Application server is relevant in case of dynamic contents like bank websites.
+An Application server utilizes more resources.
+Multithreading is supported.
+Application Servers support HTTP as well as RPC/RMI protocols.
