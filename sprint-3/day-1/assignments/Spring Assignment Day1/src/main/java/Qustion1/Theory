@@ -1,0 +1,94 @@
+ Spring Bean:-
+
+Spring beans are the objects which are created and managed completely by spring container.
+
+These beans are the heart of the application.
+
+Beans can be defined in spring either by using XML configuration or by using Annotation.
+
+In XML configuration, bean can be defined using < bean > tag inside < beans > tag.
+
+In Annotation configuration , bean can be defined using the annotations like @Component,@Service,@Controller,@Repository on top of the class definition.
+
+We can also achieve beans definition completely in java class by using java configuration.
+
+Let us see how we define the bean in xml configuration
+
+In our application, let us say we have a class called Person.
+
+Example:-
+
+public class Person {
+    private int id;
+    private String name;
+    private int age;
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+     public void setAge(int age) {
+            this.age = age;
+        }
+    }
+
+XML FILE:-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean id="person" class="com.kb.di.Person">
+
+        <property name="id" value="11"/>
+        <property name="name" value="Raj1"/>
+        <property name="age" value="25"/>
+
+    </bean>
+</beans>
+
+
+
+public class BeansExample {
+
+    public static void main(String[] args) {
+
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("beans.xml");
+        Person person = (Person)applicationContext.getBean("person");
+        System.out.println("Id : "+person.getId());
+        System.out.println("Name : "+person.getName());
+        System.out.println("Age :"+ person.getAge());
+    }
+}
+
+
+Spring Container:-
+
+The IoC container is responsible to instantiate, configure and assemble the objects. The IoC container gets informations from the XML file and works accordingly. The main tasks performed by IoC container are:
+
+to instantiate the application class
+to configure the object
+to assemble the dependencies between the objects
+There are two types of IoC containers. They are:
+
+BeanFactory
+ApplicationContext
